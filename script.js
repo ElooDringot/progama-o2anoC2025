@@ -1,8 +1,12 @@
-<script> 
-function inserirNome(){
- let nomeUsuario = prompt("Qual o seu nome");
- let elemento = document.querySelector("#nome-usuario");
- elemento.textContent = nomeUsuario;
+let pontosTimeA = 0;
+let pontosTimeB = 0;
+
+function incrementarPontos(time) {
+    if (time === 'A') {
+        pontosTimeA++;
+        document.getElementById('pontosTimeA').innerText = pontosTimeA;
+    } else if (time === 'B') {
+        pontosTimeB++;
+        document.getElementById('pontosTimeB').innerText = pontosTimeB;
+    }
 }
-inserirNome();
-</script>
